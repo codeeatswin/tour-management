@@ -18,7 +18,19 @@ const tours = [
     reviews: [
       {
         name: "jhon doe",
-        rating: 4.6,
+        rating: 4.8,
+      },
+      {
+        name: "jhon doe",
+        rating: 3.6,
+      },
+      {
+        name: "jhon doe",
+        rating: 5.0,
+      },
+      {
+        name: "jhon doe",
+        rating: 4.8,
       },
     ],
     avgRating: 4.5,
