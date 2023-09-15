@@ -7,7 +7,8 @@ import cookieParser from 'cookie-parser';
 import tourRoute from './routes/tours.js';
 import userRoute from './routes/users.js';
 import authRoute from './routes/auth.js';
-
+import reviewRoute from './routes/reviews.js';
+import bookingRoute from './routes/bookings.js';
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 8000;
@@ -44,6 +45,8 @@ app.use(cookieParser());
 app.use('api/vi/auth', authRoute);
 app.use('api/vi/tours', tourRoute);
 app.use('api/vi/users', userRoute);
+app.use('api/vi/reviews', reviewRoute);
+app.use('api/vi/booking', bookingRoute);
 
 app.listen(port, () => {
   connect();
